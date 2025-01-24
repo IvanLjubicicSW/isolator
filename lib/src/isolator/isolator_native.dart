@@ -143,7 +143,7 @@ Can't close isolate $backendType from poolId = $poolId
         toDataBusIn: _fromBackendsToDataBusIn,
         data: data,
       ),
-      errorsAreFatal: true,
+      errorsAreFatal: false,
       debugName: 'ISOLATOR ISOLATE WITH BACKEND: $backendId',
       // TODO(alphamikle): Pass other arguments too
     );
@@ -190,7 +190,7 @@ Can't close isolate $backendType from poolId = $poolId
     await Isolate.spawn(
       createDataBus,
       tempDataBusOut.createIn,
-      errorsAreFatal: true,
+      errorsAreFatal: false,
     );
     await dataBusInitializerCompleter.future;
     _isDataBusCreating = false;

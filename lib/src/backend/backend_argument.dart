@@ -1,5 +1,6 @@
 library isolator;
 
+import 'package:flutter/services.dart';
 import 'package:isolator/src/backend/backend.dart';
 import 'package:isolator/src/data_bus/data_bus.dart';
 import 'package:isolator/src/frontend/frontend.dart';
@@ -16,6 +17,7 @@ class BackendArgument<T> {
     required this.toFrontendIn,
     required this.toDataBusIn,
     this.data,
+    this.rootIsolateToken,
   });
 
   /// [In], which will consume messages from [Backend] to
@@ -30,4 +32,6 @@ class BackendArgument<T> {
   ///
   /// For passing many arguments from the UI thread you can use the [Packet]
   final T? data;
+
+  final RootIsolateToken? rootIsolateToken;
 }

@@ -5,6 +5,7 @@ import 'dart:collection';
 import 'dart:developer';
 import 'dart:isolate';
 
+import 'package:flutter/services.dart';
 import 'package:isolator/src/backend/backend.dart';
 import 'package:isolator/src/backend/backend_argument.dart';
 import 'package:isolator/src/backend/backend_create_result.dart';
@@ -142,6 +143,7 @@ Can't close isolate $backendType from poolId = $poolId
         toFrontendIn: backendOut.createIn,
         toDataBusIn: _fromBackendsToDataBusIn,
         data: data,
+        rootIsolateToken: RootIsolateToken.instance,
       ),
       errorsAreFatal: false,
       debugName: 'ISOLATOR ISOLATE WITH BACKEND: $backendId',

@@ -1,4 +1,4 @@
-library isolator;
+library;
 
 /// Helper for inner layer of the package
 String initializerErrorText({

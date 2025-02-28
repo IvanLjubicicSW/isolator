@@ -1,4 +1,4 @@
-library isolator;
+library;
 
 import 'dart:async';
 import 'dart:collection';
@@ -147,7 +147,6 @@ Can't close isolate $backendType from poolId = $poolId
       ),
       errorsAreFatal: false,
       debugName: 'ISOLATOR ISOLATE WITH BACKEND: $backendId',
-      // TODO(alphamikle): Pass other arguments too
     );
     await backendInitializerCompleter.future;
     await subscription.cancel();

@@ -1,4 +1,4 @@
-library isolator;
+library;
 
 /// Inner layer helper for the Transporter
 Function getAction(

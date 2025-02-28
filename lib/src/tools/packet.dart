@@ -1,4 +1,4 @@
-library isolator;
+library;
 
 /// Class
 class Packet<T> {

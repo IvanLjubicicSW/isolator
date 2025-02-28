@@ -1,4 +1,4 @@
-library isolator;
+library;
 
 import 'package:isolator/src/out/out_abstract.dart';
 

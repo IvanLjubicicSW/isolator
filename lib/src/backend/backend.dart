@@ -1,4 +1,4 @@
-library isolator;
+library;
 
 import 'dart:async';
 import 'dart:developer';
@@ -131,8 +131,7 @@ Invalid message from Frontend: ${objectToTypedString(frontendMessage)}''',
     } catch (error) {
       result = null;
       maybeResult = Maybe<Res>(data: null, error: error);
-      // ignore:avoid_print
-      print('''[ERROR] [isolator]
+      log('''[ERROR] [isolator]
 [ERROR] Got an error in backend action:
 [ERROR] Action: "$action"
 [ERROR] Event: "${message.event}"
@@ -190,8 +189,7 @@ Invalid message from DataBus: ${objectToTypedString(dataBusMessage)}
     } catch (error) {
       result = null;
       maybeResult = Maybe<Res>(data: null, error: error);
-      // ignore:avoid_print
-      print('''
+      log('''
 [isolator]
 Got an error in backend DataBus request handler:
 Action: "$action"

@@ -1,4 +1,4 @@
-library isolator;
+library;
 
 import 'package:isolator/src/tools/helpers.dart';
 

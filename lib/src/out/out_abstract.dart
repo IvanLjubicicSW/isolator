@@ -1,4 +1,4 @@
-library isolator;
+library;
 
 import 'dart:async';
 
@@ -15,7 +15,7 @@ abstract class Out<T> {
         'Cant create In from abstract Out',
       );
 
-  /// Subscribe on events of type <T>, which will consume this [Out]
+  /// Subscribe on events of type `<T>`, which will consume this [Out]
   StreamSubscription<T> listen(
     StreamDataListener<T> onData, {
     StreamErrorListener? onError,

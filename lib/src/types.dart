@@ -1,4 +1,4 @@
-library isolator;
+library;
 
 import 'dart:async';
 
@@ -61,7 +61,7 @@ typedef BackendId = String;
 /// Json
 typedef Json = Map<String, dynamic>;
 
-/// Caller<T>
+/// `Caller<T>`
 typedef Caller<T> = T Function(dynamic object);
 
 /// VoidCallback analog

@@ -1,4 +1,4 @@
-library isolator;
+library;
 
 import 'package:flutter/services.dart';
 import 'package:isolator/src/backend/backend.dart';
@@ -33,5 +33,9 @@ class BackendArgument<T> {
   /// For passing many arguments from the UI thread you can use the [Packet]
   final T? data;
 
+  /// [RootIsolateToken] is needed if we want to use some packages/plugins
+  /// which use native code in the isolate.
+  ///
+  /// It needs to be passed to the isolate when using [Isolate.spawn].
   final RootIsolateToken? rootIsolateToken;
 }

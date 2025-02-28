@@ -1,4 +1,4 @@
-library isolator;
+library;
 
 export 'package:isolator/src/backend/backend.dart';
 export 'package:isolator/src/backend/backend_argument.dart';

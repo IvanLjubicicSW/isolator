@@ -1,4 +1,4 @@
-library isolator;
+library;
 
 import 'dart:async';
 import 'dart:developer';

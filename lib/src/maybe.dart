@@ -1,4 +1,4 @@
-library isolator;
+library;
 
 import 'package:isolator/src/frontend/frontend.dart';
 import 'package:isolator/src/tools/helpers.dart';
@@ -8,11 +8,11 @@ import 'package:meta/meta.dart';
 /// Class
 @immutable
 class Maybe<T> {
-  /// Maybe<T> - is a wrapper for Backend's calls responses. If you will use
+  /// `Maybe<T>` - is a wrapper for Backend's calls responses. If you will use
   /// [Frontend.run] method - you will always getting a some response
   ///
-  /// If Backend return some value - this value will be in Maybe<T>
-  /// If Backend will thrown with Exception - this exception will be in Maybe<T>
+  /// If Backend return some value - this value will be in `Maybe<T>`
+  /// If Backend will thrown with Exception - this exception will be in `Maybe<T>`
   const Maybe({
     required T? data,
     required Object? error,
